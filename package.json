@@ -1,0 +1,30 @@
+{
+  "name": "user-auth-template",
+  "version": "1.0.0",
+  "description": "User authentication template using React, React-redux, Redux-saga, Node.js, Express, MongoDB, Mongoose, JWT, Material UI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksii-kyrsenko/user-auth-template.git"
+  },
+  "keywords": [
+    "React",
+    "React-redux",
+    "Redux-saga",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "Material UI"
+  ],
+  "author": "Oleksii Kyrsenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oleksii-kyrsenko/user-auth-template/issues"
+  },
+  "homepage": "https://github.com/oleksii-kyrsenko/user-auth-template#readme"
+}
