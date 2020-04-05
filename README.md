@@ -2,7 +2,7 @@
 
 ## User authentication template using:
 
-### [React](https://reactjs.org/){:target="_blank"}, 
+### [React](https://reactjs.org/), 
 ### [React-redux](https://redux.js.org/basics/usage-with-react), 
 ### [Redux-saga](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html), 
 ### [Node.js](https://nodejs.org/uk/), 
