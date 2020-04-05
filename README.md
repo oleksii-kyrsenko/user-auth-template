@@ -1,6 +1,6 @@
-# user-auth-template
+# User authentication template.
 
-## User authentication template using:
+## Frameworks, libraries, modules:
 
 ### [React](https://reactjs.org/), 
 ### [React-redux](https://redux.js.org/basics/usage-with-react), 
