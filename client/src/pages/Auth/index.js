@@ -45,7 +45,7 @@ export const Auth = connect(
 		clearErrors();
 		const errorsArray = setErrorsArray(errors);
 		errorsArray.length && errorData(errorsArray);
-	}, [errors]);
+	}, [errors, clearErrors, errorData]);
 
 	const changeAuthModeHahdle = () => {
 		setAuthMode(!authMode);
