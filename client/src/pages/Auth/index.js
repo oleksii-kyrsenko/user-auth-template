@@ -12,6 +12,7 @@ import Link from '@material-ui/core/Link';
 import { useForm } from 'react-hook-form';
 import { connect } from 'react-redux';
 import { authUser, createUser } from './routines';
+import { errorData, clearErrors } from '../../commons/routines';
 import { useStyles } from './styles';
 import { setErrorsArray } from '../../helpers/setErrorsArray';
 
@@ -22,26 +23,28 @@ const mapStateToProps = (state) => ({
 const actionCreators = {
 	authUser,
 	createUser,
+	errorData,
+	clearErrors,
 };
 
 export const Auth = connect(
 	mapStateToProps,
 	actionCreators
-)(({ authUser, createUser, isAuth }) => {
+)(({ authUser, createUser, isAuth, errorData, clearErrors }) => {
 	const classes = useStyles();
 	const history = useHistory();
 	const { register, errors, handleSubmit } = useForm();
 
 	const [authMode, setAuthMode] = useState(true);
-	const [state, setState] = useState([]);
-
 
 	useEffect(() => {
 		isAuth && history.push('/');
 	}, [isAuth, history]);
 
 	useEffect(() => {
-		setState(setErrorsArray(errors));
+		clearErrors();
+		const errorsArray = setErrorsArray(errors);
+		errorsArray.length && errorData(errorsArray);
 	}, [errors]);
 
 	const changeAuthModeHahdle = () => {
