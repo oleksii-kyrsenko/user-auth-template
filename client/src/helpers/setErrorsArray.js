@@ -6,7 +6,7 @@ export const setErrorsArray = (errors) => {
 			case 'email':
 				return [...acc, { msg: 'Invalid email' }];
 			case 'password':
-				return [...acc, { msg: 'Password is required' }];
+				return [...acc, { msg: 'Password must contains min 5 characters' }];
 
 			default:
 				return acc;
